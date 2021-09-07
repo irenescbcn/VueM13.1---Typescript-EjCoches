@@ -1,0 +1,62 @@
+
+
+h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.formClass{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.hideDiv{
+    display: none;
+}
+
+/*FORMWHEEL.HTML CSS*/
+
+.form2{
+    display: none
+}
+
+.displayDiv{
+    display: block;
+}
+
+
+.formClass2{
+    display: flex;
+    flex-direction: column;
+}
+.formContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    margin: 0 10px;
+}
+
+.btnWheel{
+    margin-left: 10px;
+}
+
+.carResult{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.carDetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}

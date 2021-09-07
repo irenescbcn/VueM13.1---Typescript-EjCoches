@@ -1,0 +1,107 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../styles/styles.css">
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</head>
+
+<body>
+    <div class="container col-lg-6">
+        <h2>Ejercicio Vehículos</h2>
+        
+        <div id="form1">
+            <form class="formClass" id="formCar"  method="post"  target="formWheel.html">
+                <div class="form-group1">
+                <label for="plate">Plate</label>
+                <input type="text" class="form-control" id="plate">
+                </div>
+    
+                <div class="form-group1">
+                    <label for="brand">Brand</label>
+                    <input type="text" class="form-control" id="brand">
+                </div>
+    
+                <div class="form-group1">
+                    <label for="color">Color</label>
+                    <input type="text" class="form-control" id="color">
+                </div>
+            </form>
+    
+            <p id="carInfo"></p>
+            <button class="btn" onclick="addCar()">Create car</button>
+        </div>
+
+        <div id="form2" class="form2">
+            <form class="formClass2">
+                <div class="formContainer">
+                    <div class="form-group">
+                        <label for="wheelB1">Wheel Brand 1</label>
+                        <input type="text" class="form-control" id="wheelB1" name="wheelB1">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="wheelD1">Wheel Diameter 1</label>
+                        <input type="number" class="form-control" id="wheelD1" name="wheelD1">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="wheelB2">Wheel Brand 2</label>
+                        <input type="text" class="form-control" id="wheelB2">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="wheelD2">Wheel Diameter 2</label>
+                        <input type="number" class="form-control" id="wheelD2">
+                    </div>
+                </div>
+    
+                <div class="formContainer">
+                    <div class="form-group">
+                        <label for="wheelB3">Wheel Brand 3</label>
+                        <input type="text" class="form-control" id="wheelB3">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="wheelD3">Wheel Diameter 3</label>
+                        <input type="number" class="form-control" id="wheelD3">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="wheelB4">Wheel Brand 4</label>
+                        <input type="text" class="form-control" id="wheelB4">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="wheelD4">Wheel Diameter 4</label>
+                        <input type="number" class="form-control" id="wheelD4">
+                    </div>
+                </div>
+            </form>
+            <button class="btn btn-primary btnWheel" onclick="registerWheel()">Add Wheels</button>
+    
+            <div class="col-lg-6 carResult">
+                <h6>Car: </h6>
+                <div class="carDetails">
+                    <p id="plateResult"></p>
+                    <p id="brandResult"></p>
+                    <p id="colorResult"></p>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 wheelsResult">
+                <h6>Wheels: </h6>
+                <div class="wheelDetails">
+                    <p id="wheelResult"><strong></strong></p>
+                    <!--<<p id="wheel2"></p>
+                    <p id="wheel3"></p>
+                    <p id="wheel4"></p>-->
+                </div>
+            </div>
+        
+            <button class="btn btn-primary btnWheel" onclick="addAnotherCar()">Add Another Car</button>
+        </div>
+        
+    </div>
+    
+</body>
